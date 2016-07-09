@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+	<CommandSet xml:lang="zh-cn" Name="Random_Master_zh-cn">
+		<AppName>随机大师</AppName>
+		<Example> 在你无从选择的时候，快速帮你选择。 </Example>
+
+		<!--<Command Name="MainPage">
+			<Example> 打开管理 </Example>
+			<ListenFor> [打开][问题]管理 </ListenFor>
+			<ListenFor> [打开]管理[问题] </ListenFor>
+			<Feedback> 正在打开应用... </Feedback>
+			<Navigate />
+		</Command>
+
+		<Command Name="ConfigQues">
+			<Example> 打开【问题】的管理 / 管理【问题】 </Example>
+			<ListenFor> 管理{Text}[问题] </ListenFor>
+			<ListenFor> [打开]{Text}[问题][的]管理 </ListenFor>
+			<Feedback> 正在打开{Text}的管理... </Feedback>
+			<Navigate />
+		</Command>-->
+
+		<Command Name="Service">
+			<Example> 【问题】/ 添加 XX 或者 XX... </Example>
+			<ListenFor> [帮我][选择]{Text} </ListenFor>
+			<Feedback> 正在召唤随机大师... </Feedback>
+			<VoiceCommandService Target="RandomMasterService"/>
+		</Command>
+
+		<PhraseTopic Label ="Text" Scenario ="Dictation">
+		</PhraseTopic>
+	</CommandSet>
+</VoiceCommands>

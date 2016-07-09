@@ -119,7 +119,6 @@
     <Compile Include="Question.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Properties\RandomMasterLib.rd.xml" />
-    <Content Include="Test_Data.txt" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
