@@ -241,7 +241,7 @@
     <value>再看一次欢迎页面</value>
   </data>
   <data name="Version.Text" xml:space="preserve">
-    <value>2016.2.3</value>
+    <value>3.0</value>
   </data>
   <data name="Version_Title.Text" xml:space="preserve">
     <value>版本</value>

@@ -76,8 +76,15 @@
                 </StackPanel>
                 <StackPanel Grid.Row="1">
                     <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="© TEAM DIMENSION, 2016 " Margin="0,50,0,0" />
-                    <TextBlock x:Uid="CortanaCopyright" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Margin="0,0,0,30" />
-                </StackPanel>
+					<TextBlock x:Uid="CortanaCopyright" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Margin="0,0,0,15" />
+					<TextBlock TextAlignment="Center" FontFamily="Arial" FontSize="15" Margin="0,0,0,30">
+					Open Source on
+					<Hyperlink NavigateUri="https://github.com/BOT-Man-JL/Random-Master">
+						GitHub
+					</Hyperlink>;
+					Enjoy it :-)
+					</TextBlock>
+				</StackPanel>
             </Grid>
         </ScrollViewer>
 

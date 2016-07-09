@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="33028BOTMan.RandomMaster" Publisher="CN=869384A1-5204-4860-80FC-AD112E404F52" Version="2.3.3.0" />
+  <Identity Name="33028BOTMan.RandomMaster" Publisher="CN=869384A1-5204-4860-80FC-AD112E404F52" Version="3.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="76a3fb6b-8276-4822-8c06-622253f560e3" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>随机大师</DisplayName>
@@ -16,7 +16,6 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="RandomMaster.App">
       <uap:VisualElements DisplayName="随机大师" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="在你无从选择的时候，快速帮你选择。" BackgroundColor="transparent">
-        <uap:LockScreen Notification="badge" BadgeLogo="Assets\BadgeLogo.png" />
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="随机大师" Square71x71Logo="Assets\Square71x71Logo.png" Square310x310Logo="Assets\Square310x310Logo.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="wide310x150Logo" />
@@ -31,10 +30,10 @@
         </uap:InitialRotationPreference>
       </uap:VisualElements>
       <Extensions>
+        <uap:Extension Category="windows.personalAssistantLaunch" EntryPoint="RandomMasterService.RandomMasterBg" />
         <uap:Extension Category="windows.appService" EntryPoint="RandomMasterService.RandomMasterBg">
           <uap:AppService Name="RandomMasterService" />
         </uap:Extension>
-        <uap:Extension Category="windows.personalAssistantLaunch" EntryPoint="RandomMasterService.RandomMasterBg" />
       </Extensions>
     </Application>
   </Applications>

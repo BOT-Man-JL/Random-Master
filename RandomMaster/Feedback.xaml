@@ -40,9 +40,16 @@
                     <TransitionCollection>
                         <ContentThemeTransition/>
                     </TransitionCollection>
-                </StackPanel.Transitions>
+				</StackPanel.Transitions>
 				<TextBlock x:Uid="Feedback_Text" TextAlignment="Center" FontFamily="Arial" FontSize="20" Margin="0,70,0,0" />
-				<HyperlinkButton Content="g123nn@hotmail.com" NavigateUri="mailto:g123nn@hotmail.com?Subject=Random%20Master%20Feedback" FontFamily="Arial" FontSize="20" HorizontalAlignment="Center" Margin="0,70,0,0" />
+				<HyperlinkButton Content="g123nn@hotmail.com" NavigateUri="mailto:g123nn@hotmail.com?Subject=Random%20Master%20Feedback" FontFamily="Arial" FontSize="20" HorizontalAlignment="Center" Margin="0,15,0,0" />
+				<TextBlock TextAlignment="Center" FontFamily="Arial" FontSize="20" Margin="0,20,0,15" >
+					目前已经开源至
+					<Hyperlink NavigateUri="https://github.com/BOT-Man-JL/Random-Master">
+						GitHub
+					</Hyperlink>;
+					欢迎加入 :-)
+				</TextBlock>
 			</StackPanel>
         </StackPanel>
 
