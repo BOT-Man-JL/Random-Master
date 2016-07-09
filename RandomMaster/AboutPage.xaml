@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="RandomMaster.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RandomMaster"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid RequestedTheme="Dark">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/backgroud.jpg" Opacity="0.1"/>
+        </Grid.Background>
+        <Grid.Transitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.Transitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+		<StackPanel Background="{ThemeResource AppBarSeparatorForegroundThemeBrush}" Grid.Row="0" VerticalAlignment="Center">
+			<TextBlock x:Uid="About_Title" VerticalAlignment="Center" FontFamily="Arial" FontWeight="Bold" FontSize="25" Margin="30,15,0,20" />
+		</StackPanel>
+        <ScrollViewer Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0">
+                    <StackPanel.Transitions>
+                        <TransitionCollection>
+                            <ContentThemeTransition/>
+                        </TransitionCollection>
+                    </StackPanel.Transitions>
+                    <TextBlock>
+                <LineBreak/>
+                    </TextBlock>
+                    <Image Width="242" Height="242" Source="Assets/iconforabout.png" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" DoubleTapped="Image_DoubleTapped" />
+                    <!--<TextBlock Text="RandomMaster" FontSize="30" FontWeight="Bold" Margin="30,50,0,0" />
+            <TextBlock Text="for CORTANA" FontSize="20" Margin="30,0,0,50" />-->
+                    <TextBlock >
+                <LineBreak/>
+                    </TextBlock>
+					<TextBlock x:Uid="Version_Title" FontSize="20" FontFamily="Arial" FontWeight="Black" Margin="30,0,0,3" />
+					<TextBlock x:Uid="Version" FontSize="15" Margin="30,0,0,10" />
+                    <Grid Margin="30,30,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="2*"/>                            
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Uid="EasterEgg" VerticalAlignment="Center"
+                                   Grid.Row="0" Grid.Column="0"/>
+                        <ToggleSwitch Name="easterEgg" Toggled="easterEgg_Toggled"
+                                      Grid.Row="0" Grid.Column="1"/>
+                        <TextBlock x:Uid="CortanaFeedback" VerticalAlignment="Center"
+                                   Grid.Row="1" Grid.Column="0"/>
+                        <ToggleSwitch Name="cortanaFeedback" Toggled="cortanaFeedback_Toggled"
+                                      Grid.Row="1" Grid.Column="1"/>
+                        <TextBlock x:Uid="CortanaRC" VerticalAlignment="Center"
+                                   Grid.Row="2" Grid.Column="0"/>
+                        <ToggleSwitch Name="cortanaRC" Toggled="cortanaRC_Toggled"
+                                      Grid.Row="2" Grid.Column="1"/>
+                    </Grid>
+                    <HyperlinkButton x:Uid="reWelcomePage" Name="reWelcomePage" Click="reWelcomePage_Click" Margin="30,10,0,0" />
+                    <HyperlinkButton x:Uid="reTutorial" Name="reTutorial" Click="reTutorial_Click"  Margin="30,10,0,0" />
+                    <HyperlinkButton x:Uid="InstallVCD" Name="InstallVCD" Click="InstallVCD_Click" Visibility="Collapsed" Margin="30,10,0,0" />
+                </StackPanel>
+                <StackPanel Grid.Row="1">
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="© TEAM DIMENSION, 2016 " Margin="0,50,0,0" />
+                    <TextBlock x:Uid="CortanaCopyright" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="12" Margin="0,0,0,30" />
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

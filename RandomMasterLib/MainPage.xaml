@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="RandomMaster.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RandomMaster"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:RandomMaster"
+    mc:Ignorable="d">
+
+    <Grid RequestedTheme="Dark" Background="Black">
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <RelativePanel RequestedTheme="Dark">
+            <Button Name="HamburgerButton" FontFamily="Segoe MDL2 Assets"  Content="&#xE700;" 
+                    FontSize="20" RelativePanel.AlignLeftWithPanel="True"
+                    Click="HamburgerButton_Click" FontWeight="Bold"
+                    Padding="13"
+                    Background="{ThemeResource ContentDialogBorderThemeBrush}"
+                     >
+            </Button>
+            <Button Name="BackButton" Content="&#xE0A6;" FontFamily="segoe MDL2 Assets" FontSize="20" 
+                    Click="BackButton_Click" RelativePanel.RightOf="HamburgerButton"  
+                    Padding="13"  RequestedTheme="Dark" />
+            <TextBlock Name="TitleTextBlock" 
+                       RelativePanel.RightOf="BackButton" 
+                       FontSize="20" 
+                       FontWeight="Bold" 
+                       Text="RandomMaster" 
+                       Margin="20,10,0,0" RequestedTheme="Dark"/>
+        </RelativePanel>-->
+        <SplitView Name="mySplitView" 
+                   DisplayMode="CompactOverlay"
+                   OpenPaneLength="300"
+                   CompactPaneLength="48"
+                   >
+            <SplitView.Pane>
+                <Grid RequestedTheme="Dark">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.Transitions>
+                        <TransitionCollection>
+                            <EdgeUIThemeTransition/>
+                        </TransitionCollection>
+                    </Grid.Transitions>
+
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Background="{ThemeResource AppBarBackgroundThemeBrush}">
+                        <Button  Name="HamburgerButton" FontFamily="Segoe MDL2 Assets"  Content="&#xE700;" 
+                    FontSize="20" RelativePanel.AlignLeftWithPanel="True"
+                    Click="HamburgerButton_Click" FontWeight="Bold"
+                    Padding="13"
+                    Background="{ThemeResource ContentDialogBorderThemeBrush}"
+                     >
+                        </Button>
+                        <TextBlock  VerticalAlignment="Center" Text="RandomMaster for Cortana" FontFamily="微软雅黑" FontSize="16" FontWeight="Bold" Margin="5,3,0,0"  />
+                    </StackPanel>
+
+                    <ListBox
+                        Grid.Row="1"
+                        SelectionMode="Single" 
+                         Name="IconListBox"
+                         SelectionChanged="IconListBox_SelectionChanged" 
+                         >
+                        <ListBoxItem Name="HomeListBoxItem" Padding="10">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE10F;" Margin="5" />
+                                <TextBlock  VerticalAlignment="Center" Text="问题列表" FontFamily="微软雅黑" FontSize="15" FontWeight="Bold" Margin="15,0,0,0"  />
+                            </StackPanel>
+                        </ListBoxItem>
+                        <ListBoxItem Name="FeedbackListBoxItem" Padding="10">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE11F;" Margin="5" />
+                                <TextBlock VerticalAlignment="Center" Text="反馈给开发者" FontFamily="微软雅黑" FontSize="15"  FontWeight="Bold" Margin="15,0,0,0"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox>
+                    <Line Grid.Row="2" StrokeThickness="1" Stroke="{ThemeResource AppBarSeparatorForegroundThemeBrush}" Fill="{ThemeResource AppBarSeparatorForegroundThemeBrush}" />
+                    <ListBox
+                        Grid.Row="3"
+                        SelectionMode="Single" 
+                         Name="configListBox"
+                         SelectionChanged="configListBox_SelectionChanged" RequestedTheme="Dark"
+                         >
+                        <ListBoxItem Name="configListBoxItem" Padding="10">
+                            <StackPanel  Grid.Row="1" Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE115;" Margin="5" />
+                                <TextBlock  VerticalAlignment="Center" Text="关于" FontFamily="微软雅黑" FontSize="15"  FontWeight="Bold" Margin="15,0,0,0"/>
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox>
+                </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Frame Name="MyFrame"></Frame>
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+</Page>

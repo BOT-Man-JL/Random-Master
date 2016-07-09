@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Greeting_button.Content" xml:space="preserve">
+    <value>开始使用</value>
+  </data>
+  <data name="Greeting_Page1_t1.Text" xml:space="preserve">
+    <value>欢迎使用</value>
+  </data>
+  <data name="Greeting_Page1_t2.Text" xml:space="preserve">
+    <value>随机大师</value>
+  </data>
+  <data name="Greeting_Page2_t1.Text" xml:space="preserve">
+    <value>和小娜对话</value>
+  </data>
+  <data name="Greeting_Page2_t2.Text" xml:space="preserve">
+    <value>让她为你解决选择烦恼</value>
+  </data>
+  <data name="Greeting_Page3_t1.Text" xml:space="preserve">
+    <value>了解更多</value>
+  </data>
+  <data name="Greeting_Page3_t2.Text" xml:space="preserve">
+    <value>欢迎翻阅用户手册</value>
+  </data>
+  <data name="Greeting_prompt.Text" xml:space="preserve">
+    <value>向右滑动以继续</value>
+  </data>
+  <data name="Hamburger_t1.Text" xml:space="preserve">
+    <value>问题列表</value>
+  </data>
+  <data name="Hamburger_t2.Text" xml:space="preserve">
+    <value>用户手册</value>
+  </data>
+  <data name="Hamburger_t3.Text" xml:space="preserve">
+    <value>用户反馈</value>
+  </data>
+  <data name="Hamburger_t4.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Hamburger_Title.Text" xml:space="preserve">
+    <value>随机大师</value>
+  </data>
+  <data name="Option_Add.Label" xml:space="preserve">
+    <value>添加选项</value>
+  </data>
+  <data name="Option_Delete.Label" xml:space="preserve">
+    <value>删除选项</value>
+  </data>
+  <data name="Option_Modify.Label" xml:space="preserve">
+    <value>更改问题</value>
+  </data>
+  <data name="Option_prompt.Text" xml:space="preserve">
+    <value>还没有选项，点击下方的“添加选项”新建~</value>
+  </data>
+  <data name="About_Title.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="ChangeQuest.PrimaryButtonText" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ChangeQuest.SecondaryButtonText" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ChangeQuest.Title" xml:space="preserve">
+    <value>更改问题</value>
+  </data>
+  <data name="ConfirmDelete.PrimaryButtonText" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="ConfirmDelete.SecondaryButtonText" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="ConfirmDelete.Title" xml:space="preserve">
+    <value>确定删除所选问题吗？</value>
+  </data>
+  <data name="CortanaCopyright.Text" xml:space="preserve">
+    <value>Cortana® is a registered trademark of Microsoft Corporation.</value>
+  </data>
+  <data name="EasterEgg.Text" xml:space="preserve">
+    <value>彩蛋</value>
+  </data>
+  <data name="Feedback_Text.Text" xml:space="preserve">
+    <value>有任何疑问或是意见，欢迎反馈给：</value>
+  </data>
+  <data name="Feedback_Title.Text" xml:space="preserve">
+    <value>反馈给开发者</value>
+  </data>
+  <data name="NewOpt.PrimaryButtonText" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="NewOpt.SecondaryButtonText" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="NewOpt.Title" xml:space="preserve">
+    <value>添加选项</value>
+  </data>
+  <data name="NewQuest.PrimaryButtonText" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="NewQuest.SecondaryButtonText" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="NewQuest.Title" xml:space="preserve">
+    <value>添加问题</value>
+  </data>
+  <data name="QuesList_Accept.Label" xml:space="preserve">
+    <value>完成编辑</value>
+  </data>
+  <data name="QuesList_Add.Label" xml:space="preserve">
+    <value>添加问题</value>
+  </data>
+  <data name="QuesList_Delete.Label" xml:space="preserve">
+    <value>删除问题</value>
+  </data>
+  <data name="QuesList_prompt.Text" xml:space="preserve">
+    <value>列表中还没有问题，点击“添加问题”按钮新建你的第一个问题！</value>
+  </data>
+  <data name="QuesList_Refresh.Label" xml:space="preserve">
+    <value>刷新列表</value>
+  </data>
+  <data name="QuesList_Title.Text" xml:space="preserve">
+    <value>问题列表</value>
+  </data>
+  <data name="reWelcomePage.Content" xml:space="preserve">
+    <value>再看一次欢迎页面</value>
+  </data>
+  <data name="Version.Text" xml:space="preserve">
+    <value>2016.2.3</value>
+  </data>
+  <data name="Version_Title.Text" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="Manual_Pivot1_t1.Text" xml:space="preserve">
+    <value>Random Master for Cortana（随机大师）是一款能帮你进行各种随机选择的Cortana小插件，能够帮你完成一些问题的随机选择。</value>
+  </data>
+  <data name="Manual_Pivot1_t2.Text" xml:space="preserve">
+    <value>该功能只需要与小娜直接对话来进行。如果需要进行问题管理或是各项设置，请打开此App界面完成。</value>
+  </data>
+  <data name="Manual_Pivot1_t3.Text" xml:space="preserve">
+    <value>想了解具体指令与详细介绍，请继续向后翻阅。</value>
+  </data>
+  <data name="Manual_Pivot1_Title.Header" xml:space="preserve">
+    <value>简介</value>
+  </data>
+  <data name="Manual_Pivot2_q1.Text" xml:space="preserve">
+    <value>格式</value>
+  </data>
+  <data name="Manual_Pivot2_q2.Text" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="Manual_Pivot2_q3.Text" xml:space="preserve">
+    <value>例子</value>
+  </data>
+  <data name="Manual_Pivot2_st1.Text" xml:space="preserve">
+    <value>需要给出选项：</value>
+  </data>
+  <data name="Manual_Pivot2_st2.Text" xml:space="preserve">
+    <value>小娜直接回复：</value>
+  </data>
+  <data name="Manual_Pivot2_t1.Text" xml:space="preserve">
+    <value>随机大师【问题】</value>
+  </data>
+  <data name="Manual_Pivot2_t2.Text" xml:space="preserve">
+    <value>Cortana将从问题列表中指定问题的选项当中进行随机回复。如果找不到问题，可以根据Cortana的回复添加选项。</value>
+  </data>
+  <data name="Manual_Pivot2_t3.Text" xml:space="preserve">
+    <value>对于含有答案的问题，Cortana可以直接进行回答。</value>
+  </data>
+  <data name="Manual_Pivot2_t4.Text" xml:space="preserve">
+    <value>随机大师 今天中午吃什么</value>
+  </data>
+  <data name="Manual_Pivot2_t5.Text" xml:space="preserve">
+    <value>随机大师 聚会玩什么呢</value>
+  </data>
+  <data name="Manual_Pivot2_t6.Text" xml:space="preserve">
+    <value>随机大师 我要不要去吃午饭</value>
+  </data>
+  <data name="Manual_Pivot2_t7.Text" xml:space="preserve">
+    <value>随机大师 我该去自习吗</value>
+  </data>
+  <data name="Manual_Pivot2_t8.Text" xml:space="preserve">
+    <value>随机大师 我要选白金还是蓝黑呢</value>
+  </data>
+  <data name="Manual_Pivot2_t9.Text" xml:space="preserve">
+    <value>随机大师 中午吃炒饭还是盖饭或者牛排呢</value>
+  </data>
+  <data name="Manual_Pivot2_Title.Header" xml:space="preserve">
+    <value>帮我选择</value>
+  </data>
+  <data name="Manual_Pivot3_q1.Text" xml:space="preserve">
+    <value>格式</value>
+  </data>
+  <data name="Manual_Pivot3_q2.Text" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="Manual_Pivot3_t1.Text" xml:space="preserve">
+    <value>随机大师 添加 XX 或者 XX 或者 。。。</value>
+  </data>
+  <data name="Manual_Pivot3_t2.Text" xml:space="preserve">
+    <value>为之前没有选项的问题语音添加选项，仅在问到了没有选项的问题时才能生效。</value>
+  </data>
+  <data name="Manual_Pivot3_Title.Header" xml:space="preserve">
+    <value>添加选项</value>
+  </data>
+  <data name="Manual_Pivot4_q1.Text" xml:space="preserve">
+    <value>Q：为什么总出现“Cortana没听清你说什么，请尝试使用稳定的网络，重新进行语音输入”</value>
+  </data>
+  <data name="Manual_Pivot4_q2.Text" xml:space="preserve">
+    <value>Q：为什么我对Cortana说随机大师的指令，都会进入bing搜索 或 出现错误</value>
+  </data>
+  <data name="Manual_Pivot4_q3.Text" xml:space="preserve">
+    <value>Q：如何提高Cortana语音识别正确率</value>
+  </data>
+  <data name="Manual_Pivot4_q4.Text" xml:space="preserve">
+    <value>Q：通过Cortana添加的问题没有立即出现在问题列表中</value>
+  </data>
+  <data name="Manual_Pivot4_q5.Text" xml:space="preserve">
+    <value>Q：如何获得更多成就</value>
+  </data>
+  <data name="Manual_Pivot4_q6.Text" xml:space="preserve">
+    <value>Q：关于联网智能处理</value>
+  </data>
+  <data name="Manual_Pivot4_q7.Text" xml:space="preserve">
+    <value>Q：其他没有提到的问题</value>
+  </data>
+  <data name="Manual_Pivot4_t1.Text" xml:space="preserve">
+    <value>A：由于Windows10的Cortana的存在问题，不能保证第三方应用正确运行；另外，请保证您所处的网络环境是通畅的。</value>
+  </data>
+  <data name="Manual_Pivot4_t2.Text" xml:space="preserve">
+    <value>A：由于注册Cortana语音指令失败，请在【系统设置】将【中文】设置为默认【语音】语言，并在【关于】页面重新注册（还是不行就多试几次吧）。</value>
+  </data>
+  <data name="Manual_Pivot4_t3.Text" xml:space="preserve">
+    <value>A：使用【随机大师 帮我选择】作为命令开头。</value>
+  </data>
+  <data name="Manual_Pivot4_t4.Text" xml:space="preserve">
+    <value>A：由于系统限制，数据没有进行及时同步；请在问题页面点击刷新按钮。</value>
+  </data>
+  <data name="Manual_Pivot4_t5.Text" xml:space="preserve">
+    <value>A：打开【关于】页面上的彩蛋开关后，如果问的问题包含了某些内容，就会激活彩蛋并获得相应的成就。</value>
+  </data>
+  <data name="Manual_Pivot4_t6.Text" xml:space="preserve">
+    <value>A：智能语义分析需要联网，所以仅当联网后才能获取问题特征，并支持相近语句询问同一问题。</value>
+  </data>
+  <data name="Manual_Pivot4_t7.Text" xml:space="preserve">
+    <value>A：欢迎与我们交流！我们的邮箱已写在用户反馈页面中，期待你的反馈！另外也可以通过应用商店进行评论来让我们看到。喜欢此应用，别忘了五星好评^_^~</value>
+  </data>
+  <data name="Manual_Pivot4_Title.Header" xml:space="preserve">
+    <value>常见问题</value>
+  </data>
+  <data name="Manual_Title.Text" xml:space="preserve">
+    <value>用户手册</value>
+  </data>
+  <data name="App_NoSuchQuestion" xml:space="preserve">
+    <value>抱歉，我没有找到此问题...</value>
+  </data>
+  <data name="App_VcdFailure" xml:space="preserve">
+    <value>注册Cortana语音命令失败；请到【关于】页面重新注册（详见【常见问题】）</value>
+  </data>
+  <data name="App_NoOptions" xml:space="preserve">
+    <value>还没有选项</value>
+  </data>
+  <data name="EE_count" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cPattern" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="EE_q0_a1" xml:space="preserve">
+    <value>我不乖了，你自己决定啦~</value>
+  </data>
+  <data name="EE_q0_a2" xml:space="preserve">
+    <value>哈哈，你猜呢~</value>
+  </data>
+  <data name="EE_q0_a3" xml:space="preserve">
+    <value>这个问题有点深奥呀。。。（最近开发者智商不够了）</value>
+  </data>
+  <data name="EE_q0_c" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="EE_q1" xml:space="preserve">
+    <value>明天</value>
+  </data>
+  <data name="EE_q1_a1" xml:space="preserve">
+    <value>说到明天。。。我真还没什么主。。。</value>
+  </data>
+  <data name="EE_q1_a2" xml:space="preserve">
+    <value>明天嘛。。。我们还是考虑一下今天吧!</value>
+  </data>
+  <data name="EE_q1_c" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="EE_q2" xml:space="preserve">
+    <value>女朋友 女友 女票</value>
+  </data>
+  <data name="EE_q2_a1" xml:space="preserve">
+    <value>对于这种事情，随机大师表示无能为力唉</value>
+  </data>
+  <data name="EE_q2_a2" xml:space="preserve">
+    <value>作为单身狗的随机大师表示伤不起~</value>
+  </data>
+  <data name="EE_q2_c" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Phrase_NOT" xml:space="preserve">
+    <value>不</value>
+  </data>
+  <data name="Postfix1" xml:space="preserve">
+    <value>~</value>
+  </data>
+  <data name="Postfix2" xml:space="preserve">
+    <value>~</value>
+  </data>
+  <data name="Postfix3" xml:space="preserve">
+    <value>吧~</value>
+  </data>
+  <data name="Postfix4" xml:space="preserve">
+    <value>,哈哈~</value>
+  </data>
+  <data name="Postfix5" xml:space="preserve">
+    <value>怎么样?</value>
+  </data>
+  <data name="Postfix6" xml:space="preserve">
+    <value>吧~</value>
+  </data>
+  <data name="Postfix7" xml:space="preserve">
+    <value>看起来不错的样子~</value>
+  </data>
+  <data name="Prefix1" xml:space="preserve">
+    <value>我觉得应该选</value>
+  </data>
+  <data name="Prefix2" xml:space="preserve">
+    <value>我觉得还是要选</value>
+  </data>
+  <data name="Prefix3" xml:space="preserve">
+    <value>考虑一下</value>
+  </data>
+  <data name="Prefix4" xml:space="preserve">
+    <value>天意告诉我</value>
+  </data>
+  <data name="Prefix5" xml:space="preserve">
+    <value>你觉得</value>
+  </data>
+  <data name="Prefix6" xml:space="preserve">
+    <value>就选</value>
+  </data>
+  <data name="Prefix7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prompt_AddOpt1" xml:space="preserve">
+    <value>我还没有选项，要添加选项就说 随机大师 添加 什么或者什么</value>
+  </data>
+  <data name="Prompt_AddOpt2" xml:space="preserve">
+    <value>没有选项，可以语音添加【随机大师 添加 xxx或者xxx...】（记得说 随机大师 添加）</value>
+  </data>
+  <data name="Prompt_ErrInput1" xml:space="preserve">
+    <value>不好意思，我没有听明白!</value>
+  </data>
+  <data name="Prompt_ErrInput2" xml:space="preserve">
+    <value>请尝试使用稳定的网络，重新进行语音输入（详见【常见问题】）</value>
+  </data>
+  <data name="Prompt_NoQues1" xml:space="preserve">
+    <value>我不知道你要添加到什么问题呢!</value>
+  </data>
+  <data name="Prompt_NoQues2" xml:space="preserve">
+    <value>没有检测到已经存储的问题。。</value>
+  </data>
+  <data name="Prompt_SetQues" xml:space="preserve">
+    <value>设置成功，你下次可以直接问这个问题啦!</value>
+  </data>
+  <data name="Prompt_SetQuesPost" xml:space="preserve">
+    <value>的选项添加</value>
+  </data>
+  <data name="Prompt_SetQuesPre" xml:space="preserve">
+    <value>已将</value>
+  </data>
+  <data name="Prompt_ErrSyntax" xml:space="preserve">
+    <value>请说完整的简单疑问句!</value>
+  </data>
+  <data name="Prompt_ErrSyntaxPre" xml:space="preserve">
+    <value>无法识别</value>
+  </data>
+  <data name="Prompt_ErrSyntaxPost" xml:space="preserve">
+    <value>的语法结构。。</value>
+  </data>
+  <data name="App_QuesNoFeature" xml:space="preserve">
+    <value>请联网获取特征</value>
+  </data>
+  <data name="EE_q3" xml:space="preserve">
+    <value>吃</value>
+  </data>
+  <data name="EE_q3_a1" xml:space="preserve">
+    <value>吃。。什么呢，我也不知道~</value>
+  </data>
+  <data name="EE_q3_a2" xml:space="preserve">
+    <value>再吃就长胖了哟（嘿嘿）</value>
+  </data>
+  <data name="EE_q3_c" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="EE_q4" xml:space="preserve">
+    <value>自习 作业 上课</value>
+  </data>
+  <data name="EE_q4_a1" xml:space="preserve">
+    <value>我生也有涯，而知也无涯；我们还是想想周末去哪玩吧~</value>
+  </data>
+  <data name="EE_q4_a2" xml:space="preserve">
+    <value>啦啦啦~ 外边天气不错，我们还是出去玩吧~</value>
+  </data>
+  <data name="EE_q4_c" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="EE_q5" xml:space="preserve">
+    <value>游戏 玩</value>
+  </data>
+  <data name="EE_q5_a1" xml:space="preserve">
+    <value>人生苦短，及时行乐~</value>
+  </data>
+  <data name="EE_q5_a2" xml:space="preserve">
+    <value>你是说我们小时候玩的过家家吗（哈哈）</value>
+  </data>
+  <data name="EE_q5_c" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="InstallVCD.Content" xml:space="preserve">
+    <value>注册Cortana语音命令</value>
+  </data>
+  <data name="App_QuesBadFeature" xml:space="preserve">
+    <value>无法识别该问题</value>
+  </data>
+  <data name="Prompt_Processing1" xml:space="preserve">
+    <value>马上就告诉你啦!</value>
+  </data>
+  <data name="Prompt_Processing2" xml:space="preserve">
+    <value>和我一起，闭上眼睛，等待奇迹的出现吧~</value>
+  </data>
+  <data name="Prompt_AddToQues1" xml:space="preserve">
+    <value>确定添加选项吗?</value>
+  </data>
+  <data name="Prompt_AddToQues2" xml:space="preserve">
+    <value>将选项添加到</value>
+  </data>
+  <data name="Prompt_AddToQues3" xml:space="preserve">
+    <value>你到底要不要添加选项呢?</value>
+  </data>
+  <data name="Prompt_AddToQues4" xml:space="preserve">
+    <value>将选项添加到</value>
+  </data>
+  <data name="TutorialFailed2a" xml:space="preserve">
+    <value>噢，你再试试，说，随机大师，明天早上要不要喝牛奶？</value>
+  </data>
+  <data name="TutorialFailed2b" xml:space="preserve">
+    <value>你还在教程模式里，请说”随机大师 明天早上要不要喝牛奶“</value>
+  </data>
+  <data name="TutorialFailed3a" xml:space="preserve">
+    <value>不对不对，你应该问我，随机大师，明早吃面包还是披萨？</value>
+  </data>
+  <data name="TutorialFailed3b" xml:space="preserve">
+    <value>你还在教程模式里，请说 "随机大师 明早吃面包还是披萨"</value>
+  </data>
+  <data name="TutorialFailed4a" xml:space="preserve">
+    <value>不对啦，你应该问我关于吃什么的问题。</value>
+  </data>
+  <data name="TutorialFailed4b" xml:space="preserve">
+    <value>你还在教程模式里，请问一个关于【吃什么】的问题</value>
+  </data>
+  <data name="TutorialFailed5a" xml:space="preserve">
+    <value>不对呢，你应该对我说，随机大师，添加什么或者什么。</value>
+  </data>
+  <data name="TutorialFailed5b" xml:space="preserve">
+    <value>你还在教程模式里，请说 “随机大师 添加【什么】或者【什么】”</value>
+  </data>
+  <data name="TutorialFailed6a" xml:space="preserve">
+    <value>你再问问刚刚问过的问题吧，我已经记下你的选项啦！</value>
+  </data>
+  <data name="TutorialFailed6b" xml:space="preserve">
+    <value>你还在教程模式里，请问刚刚那个关于吃的问题</value>
+  </data>
+  <data name="TutorialKeyword1" xml:space="preserve">
+    <value>教程</value>
+  </data>
+  <data name="TutorialKeyword2" xml:space="preserve">
+    <value>喝 不 牛奶</value>
+  </data>
+  <data name="TutorialKeyword3" xml:space="preserve">
+    <value>面包 披萨</value>
+  </data>
+  <data name="TutorialKeyword4" xml:space="preserve">
+    <value>吃</value>
+  </data>
+  <data name="TutorialKeyword5" xml:space="preserve">
+    <value>添加 或者</value>
+  </data>
+  <data name="TutorialKeyword6" xml:space="preserve">
+    <value>吃</value>
+  </data>
+  <data name="TutorialSuccess1a" xml:space="preserve">
+    <value>如果你在纠结明天早上要不要喝牛奶，就问问，随机大师，明天早上要不要喝牛奶？</value>
+  </data>
+  <data name="TutorialSuccess1b" xml:space="preserve">
+    <value>如果你在纠结明天早上要不要喝牛奶，就问问：“随机大师 明天早上要不要喝牛奶”</value>
+  </data>
+  <data name="TutorialSuccess2a" xml:space="preserve">
+    <value>哈哈，喝吧！多喝牛奶身体好！ 接下来你试试，随机大师，明早吃面包还是披萨？</value>
+  </data>
+  <data name="TutorialSuccess2b" xml:space="preserve">
+    <value>哈哈，喝吧~ 多喝牛奶身体好~ 接下来你试试问我 “随机大师 明早吃面包还是披萨”</value>
+  </data>
+  <data name="TutorialSuccess3a" xml:space="preserve">
+    <value>你真棒！奖励你一大块香喷喷的披萨！你还可以再问一个关于吃什么的问题。</value>
+  </data>
+  <data name="TutorialSuccess3b" xml:space="preserve">
+    <value>你真棒！奖励你一大块香喷喷的披萨~你还可以再问一个关于【吃什么】的问题。</value>
+  </data>
+  <data name="TutorialSuccess4a" xml:space="preserve">
+    <value>我还不知道有什么选项呢，你可以说，随机大师，添加什么或者什么。</value>
+  </data>
+  <data name="TutorialSuccess4b" xml:space="preserve">
+    <value>我还不知道有什么选项呢~你可以说“随机大师 添加【什么】或者【什么】”</value>
+  </data>
+  <data name="TutorialSuccess5a" xml:space="preserve">
+    <value>哈哈，我记下了，你可以到 应用 管理我记下的问题答案，再试试这个问题吧！</value>
+  </data>
+  <data name="TutorialSuccess5b" xml:space="preserve">
+    <value>我记下了，你可以到 应用 管理我记下的问题答案。再试试这个问题吧！</value>
+  </data>
+  <data name="TutorialSuccess6a" xml:space="preserve">
+    <value>恭喜你完成教程啦！</value>
+  </data>
+  <data name="TutorialSuccess6b" xml:space="preserve">
+    <value>现在回到App，结束我们的教程之旅啦！</value>
+  </data>
+  <data name="TutorialCount" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="CortanaFeedback.Text" xml:space="preserve">
+    <value>允许小娜收集反馈</value>
+  </data>
+  <data name="Prompt_AskForFeedback1" xml:space="preserve">
+    <value>是否对这个回答满意呢？</value>
+  </data>
+  <data name="Prompt_AskForFeedback2" xml:space="preserve">
+    <value>是否对该回答满意</value>
+  </data>
+  <data name="Prompt_BadFeedback1" xml:space="preserve">
+    <value>呜呜呜，我下次会给你一个更好的答案！</value>
+  </data>
+  <data name="Prompt_BadFeedback2" xml:space="preserve">
+    <value>我们会根据您的回答改进算法~</value>
+  </data>
+  <data name="Prompt_GoodFeedback1" xml:space="preserve">
+    <value>哈哈，谢谢你哟！</value>
+  </data>
+  <data name="Prompt_GoodFeedback2" xml:space="preserve">
+    <value>我们会根据您的回答改进算法~</value>
+  </data>
+  <data name="reTutorial.Content" xml:space="preserve">
+    <value>进入教学模式</value>
+  </data>
+  <data name="CortanaRC.Text" xml:space="preserve">
+    <value>允许小娜进行推荐</value>
+  </data>
+  <data name="Prompt_ProcessRec1" xml:space="preserve">
+    <value>正在推荐</value>
+  </data>
+  <data name="Prompt_ProcessRec2Post" xml:space="preserve">
+    <value>相关的推荐...</value>
+  </data>
+  <data name="Prompt_ProcessRec2Pre" xml:space="preserve">
+    <value>我正在找和</value>
+  </data>
+  <data name="Prompt_Recommend1" xml:space="preserve">
+    <value>看起来不错的样子~</value>
+  </data>
+  <data name="Prompt_Recommend2" xml:space="preserve">
+    <value>根据你的喜好推荐了一下</value>
+  </data>
+  <data name="Prompt_Recommend3" xml:space="preserve">
+    <value>*数据来源：大众点评API</value>
+  </data>
+  <data name="Prompt_Recommend4" xml:space="preserve">
+    <value>（更多信息戳这里 )</value>
+  </data>
+  <data name="Prompt_AskForFeedback3" xml:space="preserve">
+    <value>[小娜限制：只能回答 是/否]</value>
+  </data>
+  <data name="TutorialQuitHint" xml:space="preserve">
+    <value>（可以进入App界面关闭教程模式）</value>
+  </data>
+</root>

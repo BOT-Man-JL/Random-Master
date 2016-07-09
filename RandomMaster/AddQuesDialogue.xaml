@@ -1,0 +1,17 @@
+﻿<ContentDialog
+	x:Uid="NewQuest"
+    x:Class="RandomMaster.AddQuesDialogue"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RandomMaster"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Name="addQuesWindow" 
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick" 
+    RequestedTheme="Dark">
+
+    <StackPanel>
+        <TextBox Name="newOues" FontFamily="Arial" FontSize="20" Margin="10,20,10,10" KeyUp="newOues_KeyUp"/>
+    </StackPanel>
+</ContentDialog>

@@ -1,0 +1,142 @@
+﻿<Page
+    x:Class="RandomMaster.Manual"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RandomMaster"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid RequestedTheme="Dark">
+        <Grid.Transitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.Transitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height=" Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="{ThemeResource AppBarBackgroundThemeBrush}" RequestedTheme="Light">
+            <StackPanel.Transitions>
+                <TransitionCollection>
+                    <EdgeUIThemeTransition/>
+                </TransitionCollection>
+            </StackPanel.Transitions>
+                <TextBlock x:Uid="Manual_Title" FontFamily="Arial" FontSize="25" FontWeight="Bold" Margin="30,15,0,20" />
+          
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.767"/>
+                    <GradientStop Color="{ThemeResource SystemAccentColor}" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <Image Grid.Row="1" Width="200" Opacity="0.2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Source="Assets/iconformanual.png"  />
+        <Pivot Padding="10" Grid.Row="1">
+			<PivotItem x:Uid="Manual_Pivot1_Title">
+                <ScrollViewer Margin="10" >
+                    <StackPanel>
+						<TextBlock x:Uid="Manual_Pivot1_t1" LineHeight="30" Margin="10, 15, 0, 0" TextWrapping="Wrap" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot1_t2" LineHeight="30" Margin="10, 15, 0, 0" TextWrapping="Wrap" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot1_t3" LineHeight="30" Margin="10, 15, 0, 0" TextWrapping="Wrap" FontWeight="Light" />
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+			<PivotItem x:Uid="Manual_Pivot2_Title">
+                <ScrollViewer Margin="10">
+                    <StackPanel>
+						<TextBlock x:Uid="Manual_Pivot2_q1" Style="{StaticResource SubheaderTextBlockStyle}" />
+						<TextBlock x:Uid="Manual_Pivot2_t1" Margin="10, 15, 0, 15" TextWrapping="WrapWholeWords" FontWeight="Light" />
+
+						<TextBlock x:Uid="Manual_Pivot2_q2" Style="{StaticResource SubheaderTextBlockStyle}" />
+						<TextBlock x:Uid="Manual_Pivot2_t2" Margin="10, 15, 0, 0" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot2_t3" Margin="10, 15, 0, 15" TextWrapping="WrapWholeWords" FontWeight="Light" />
+
+						<TextBlock x:Uid="Manual_Pivot2_q3" Style="{StaticResource SubheaderTextBlockStyle}" />
+						
+						<TextBlock x:Uid="Manual_Pivot2_st1" Margin="10, 15, 0, 15" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot2_t4" Margin="20, 15, 0, 0" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot2_t5" Margin="20, 15, 0, 15" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						
+						<TextBlock x:Uid="Manual_Pivot2_st2" Margin="10, 15, 0, 15" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot2_t6" Margin="20, 15, 0, 0" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot2_t7" Margin="20, 15, 0, 0" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot2_t8" Margin="20, 15, 0, 0" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						<TextBlock x:Uid="Manual_Pivot2_t9" Margin="20, 15, 0, 0" TextWrapping="WrapWholeWords" FontWeight="Light" />
+					</StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+            <!--<PivotItem Header="随机数">
+                <ScrollViewer Margin="10">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" >语音指令</TextBlock>
+                        <TextBlock FontWeight="Light" TextWrapping="WrapWholeWords" Text="&#xD;&#xA;  随机大师 随机数 [范围下界]到[范围上界]"/>
+                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" ><LineBreak/>功能</TextBlock>
+                        <TextBlock FontWeight="Light" LineHeight="30" TextWrapping="WrapWholeWords" Text="&#xD;&#xA;  Cortana将从给出的数字范围中选出随机整数进行回复。"/>
+                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" ><LineBreak/>举例</TextBlock>
+                        <TextBlock FontWeight="Light" TextWrapping="WrapWholeWords" Text="&#xD;&#xA;  随机大师 随机数 1到10"/>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>-->
+			<PivotItem x:Uid="Manual_Pivot3_Title">
+                <ScrollViewer Margin="10">
+					<StackPanel>
+						<TextBlock x:Uid="Manual_Pivot3_q1" Style="{StaticResource SubheaderTextBlockStyle}" />
+						<TextBlock x:Uid="Manual_Pivot3_t1" Margin="10, 15, 0, 15" TextWrapping="WrapWholeWords" FontWeight="Light" />
+						
+						<TextBlock x:Uid="Manual_Pivot3_q2" Style="{StaticResource SubheaderTextBlockStyle}" />
+						<TextBlock x:Uid="Manual_Pivot3_t2" Margin="10, 15, 0, 0" TextWrapping="WrapWholeWords" FontWeight="Light" />
+					</StackPanel>
+                </ScrollViewer>
+			</PivotItem>
+            <PivotItem Header="成就与彩蛋" >
+                <ScrollViewer Margin="10">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}">
+                            成就系统
+                        </TextBlock>
+                        <TextBlock Margin="10, 15, 0, 15" FontWeight="Light" TextWrapping="WrapWholeWords">
+                            在随机大师的使用过程中，如果达到某些条件，将会获得相应的成就。
+                            在菜单中的成就列表页面可以找到自己已经达成的成就情况<LineBreak/><LineBreak/>
+                            当成就列表图标上出现小红点时就意味着有新成就达成了！
+                        </TextBlock>
+                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}">
+                            彩蛋相关
+                        </TextBlock>
+                        <TextBlock Margin="10, 15, 0, 15" FontWeight="Light" TextWrapping="WrapWholeWords">
+                            当与Cortana交互的过程中，如果碰到了Cortana比较感兴趣的话题或是达到某种条件时，可能会引发意想不到的回复，这便是有彩蛋被触发了！彩蛋甚至与成就有关哦，请多多和Cortana交互看看吧！<LineBreak/>
+                            <LineBreak/>
+                            如果觉得彩蛋系统影响了功能正常工作的话，可以在关于页面将彩蛋关闭。
+                        </TextBlock>
+                    </StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+			<PivotItem x:Uid="Manual_Pivot4_Title">
+				<ScrollViewer Margin="10">
+                    <StackPanel>
+						<TextBlock x:Uid="Manual_Pivot4_q1" LineHeight="20" Margin="0, 0, 0, 5" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_t1" LineHeight="20" Margin="0, 0, 0, 20" FontWeight="Light" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_q2" LineHeight="20" Margin="0, 0, 0, 5" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_t2" LineHeight="20" Margin="0, 0, 0, 20" FontWeight="Light" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_q3" LineHeight="20" Margin="0, 0, 0, 5" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_t3" LineHeight="20" Margin="0, 0, 0, 20" FontWeight="Light" TextWrapping="WrapWholeWords" />
+						<!--<TextBlock x:Uid="Manual_Pivot4_q4" LineHeight="20" Margin="0, 0, 0, 5" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_t4" LineHeight="20" Margin="0, 0, 0, 20" FontWeight="Light" TextWrapping="WrapWholeWords" />-->
+						<TextBlock x:Uid="Manual_Pivot4_q5" LineHeight="20" Margin="0, 0, 0, 5" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_t5" LineHeight="20" Margin="0, 0, 0, 20" FontWeight="Light" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_q6" LineHeight="20" Margin="0, 0, 0, 5" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_t6" LineHeight="20" Margin="0, 0, 0, 20" FontWeight="Light" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_q7" LineHeight="20" Margin="0, 0, 0, 5" TextWrapping="WrapWholeWords" />
+						<TextBlock x:Uid="Manual_Pivot4_t7" LineHeight="20" Margin="0, 0, 0, 20" FontWeight="Light" TextWrapping="WrapWholeWords" />
+					</StackPanel>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+        <!--<StackPanel Grid.Row="2">
+            <Image Width="200" Opacity="0.5" HorizontalAlignment="Right" VerticalAlignment="Bottom" Source="Assets/iconformanual.png" Stretch="UniformToFill" />
+        </StackPanel>-->
+    </Grid>
+</Page>
