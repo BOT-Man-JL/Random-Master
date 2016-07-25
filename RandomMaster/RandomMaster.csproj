@@ -100,9 +100,6 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Assets\acIcon.png" />
     <Content Include="Assets\backgroud.jpg" />
     <Content Include="Assets\background2.jpg" />
@@ -113,7 +110,6 @@
     <Content Include="Assets\tutorialOK.gif" />
     <Content Include="Assets\tutorial.gif" />
     <Content Include="Assets\play.gif" />
-    <Content Include="Assets\testGif.gif" />
     <Content Include="Assets\dialog1.png" />
     <Content Include="Assets\dialog2.png" />
     <Content Include="Assets\iconforabout.png" />
