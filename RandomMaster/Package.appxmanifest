@@ -30,10 +30,10 @@
         </uap:InitialRotationPreference>
       </uap:VisualElements>
       <Extensions>
-        <uap:Extension Category="windows.personalAssistantLaunch" EntryPoint="RandomMasterService.RandomMasterBg" />
         <uap:Extension Category="windows.appService" EntryPoint="RandomMasterService.RandomMasterBg">
           <uap:AppService Name="RandomMasterService" />
         </uap:Extension>
+        <uap:Extension Category="windows.personalAssistantLaunch" EntryPoint="RandomMasterService.RandomMasterBg" />
       </Extensions>
     </Application>
   </Applications>

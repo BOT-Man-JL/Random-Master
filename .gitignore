@@ -243,3 +243,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/RandomMaster/_pkginfo.txt
+/RandomMaster/_pkginfo.txt
+/RandomMaster/_scale-400.appx
+/RandomMaster/_scale-100.appx
