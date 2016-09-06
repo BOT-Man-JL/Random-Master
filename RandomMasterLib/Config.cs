@@ -20,14 +20,14 @@ namespace RandomMaster
 	public class Config
 	{
 		static public bool isSuperWideMode = false;
-        static public bool isRCon;
 		static public bool isFirstTime = true;
 		static public int tutorialProcess = 0;
 		static public bool isVcdInstalled = false;
 
 		// Roaming
 		static public bool isEEon = false;
-		static public bool isFBon = false;
+		//static public bool isFBon = false;
+		//static public bool isRCon = false;
 		static public int cAsking = 0;
 
 		// Achievement related
@@ -57,9 +57,9 @@ namespace RandomMaster
 			composite = new ApplicationDataCompositeValue();
 
 			composite["isEEon"] = isEEon;
-			composite["isFBon"] = isFBon;
+			//composite["isFBon"] = isFBon;
+			//composite["isRCon"] = isRCon;
 			composite["cAsking"] = cAsking;
-            composite["isRCon"] = isRCon;
 
             string str = "";
 			foreach (var item in accomplishments_records.Distinct())
@@ -99,12 +99,12 @@ namespace RandomMaster
 			{
 				if (composite["isEEon"] != null)
 					isEEon = (bool)composite["isEEon"];
-				if (composite["isFBon"] != null)
-					isFBon = (bool)composite["isFBon"];
+				//if (composite["isFBon"] != null)
+				//	isFBon = (bool)composite["isFBon"];
+                //if (composite["isRCon"] != null)
+                //    isRCon = (bool)composite["isRCon"];
 				if (composite["cAsking"] != null)
 					cAsking = (int)composite["cAsking"];
-                if (composite["isRCon"] != null)
-                    isRCon = (bool)composite["isRCon"]; 
 
 				if (composite["accomplishments_records"] != null)
 				{

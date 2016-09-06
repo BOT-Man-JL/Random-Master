@@ -61,14 +61,14 @@
                                    Grid.Row="0" Grid.Column="0"/>
                         <ToggleSwitch Name="easterEgg" Toggled="easterEgg_Toggled"
                                       Grid.Row="0" Grid.Column="1"/>
-                        <TextBlock x:Uid="CortanaFeedback" VerticalAlignment="Center"
+                        <!--<TextBlock x:Uid="CortanaFeedback" VerticalAlignment="Center"
                                    Grid.Row="1" Grid.Column="0"/>
                         <ToggleSwitch Name="cortanaFeedback" Toggled="cortanaFeedback_Toggled"
-                                      Grid.Row="1" Grid.Column="1"/>
-                        <TextBlock x:Uid="CortanaRC" VerticalAlignment="Center"
+                                      Grid.Row="1" Grid.Column="1"/>-->
+                        <!--<TextBlock x:Uid="CortanaRC" VerticalAlignment="Center"
                                    Grid.Row="2" Grid.Column="0"/>
                         <ToggleSwitch Name="cortanaRC" Toggled="cortanaRC_Toggled"
-                                      Grid.Row="2" Grid.Column="1"/>
+                                      Grid.Row="2" Grid.Column="1"/>-->
                     </Grid>
                     <HyperlinkButton x:Uid="reWelcomePage" Name="reWelcomePage" Click="reWelcomePage_Click" Margin="30,10,0,0" />
                     <HyperlinkButton x:Uid="reTutorial" Name="reTutorial" Click="reTutorial_Click"  Margin="30,10,0,0" />

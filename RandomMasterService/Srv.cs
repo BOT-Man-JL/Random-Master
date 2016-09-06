@@ -536,10 +536,11 @@ namespace RandomMasterService
 			rand.Next(rand.Next(rand.Next(anses.Count)));
 			userPrompt.DisplayMessage = userPrompt.SpokenMessage = anses[rand.Next(0, anses.Count)];
 
-			if (Config.isFBon)
-				await ReAskForFeedback(userPrompt, null);
-			else
-				await serviceConnection.ReportSuccessAsync(VoiceCommandResponse.CreateResponse(userPrompt));
+			//if (Config.isFBon)
+			//	await ReAskForFeedback(userPrompt, null);
+			//else
+
+			await serviceConnection.ReportSuccessAsync(VoiceCommandResponse.CreateResponse(userPrompt));
 		}
 
 		private async Task ReByOpts(List<string> opts, Random rand)
@@ -556,78 +557,79 @@ namespace RandomMasterService
 				$" {ans_tmp} " +
 				StringLoader.GetString($"Postfix{index}");
 
-			if (Config.isFBon)
-				await ReAskForFeedback(userPrompt, ans_tmp);
-			else
-				await serviceConnection.ReportSuccessAsync(VoiceCommandResponse.CreateResponse(userPrompt));
+			//if (Config.isFBon)
+			//	await ReAskForFeedback(userPrompt, ans_tmp);
+			//else
+
+			await serviceConnection.ReportSuccessAsync(VoiceCommandResponse.CreateResponse(userPrompt));
 		}
 
-		private async Task ReAskForFeedback(VoiceCommandUserMessage userPrompt, string keyword)
-		{
-			var askForFeedback1 = StringLoader.GetString("Prompt_AskForFeedback1");
-			var askForFeedback2 = StringLoader.GetString("Prompt_AskForFeedback2");
-			var askForFeedback3 = StringLoader.GetString("Prompt_AskForFeedback3");
+		//private async Task ReAskForFeedback(VoiceCommandUserMessage userPrompt, string keyword)
+		//{
+		//	var askForFeedback1 = StringLoader.GetString("Prompt_AskForFeedback1");
+		//	var askForFeedback2 = StringLoader.GetString("Prompt_AskForFeedback2");
+		//	var askForFeedback3 = StringLoader.GetString("Prompt_AskForFeedback3");
 
-			userPrompt.SpokenMessage += ";" + askForFeedback1;
-			userPrompt.DisplayMessage += "\n" + askForFeedback2;
-			userPrompt.DisplayMessage += "\n" + askForFeedback3;
+		//	userPrompt.SpokenMessage += ";" + askForFeedback1;
+		//	userPrompt.DisplayMessage += "\n" + askForFeedback2;
+		//	userPrompt.DisplayMessage += "\n" + askForFeedback3;
 
-			var userReprompt = new VoiceCommandUserMessage();
-			userReprompt.SpokenMessage = askForFeedback1;
-			userReprompt.DisplayMessage = askForFeedback2;
+		//	var userReprompt = new VoiceCommandUserMessage();
+		//	userReprompt.SpokenMessage = askForFeedback1;
+		//	userReprompt.DisplayMessage = askForFeedback2;
 
-			var result = await serviceConnection.RequestConfirmationAsync
-				(VoiceCommandResponse.CreateResponseForPrompt(userPrompt, userReprompt));
+		//	var result = await serviceConnection.RequestConfirmationAsync
+		//		(VoiceCommandResponse.CreateResponseForPrompt(userPrompt, userReprompt));
 
-			if (result != null)  // User Cancel => result = null
-				if (result.Confirmed)
-				{
-					if (Config.isRCon && keyword != null)
-					{
-						userPrompt.SpokenMessage = StringLoader.GetString("Prompt_ProcessRec1") + keyword;
-						userPrompt.DisplayMessage = StringLoader.GetString("Prompt_ProcessRec2Pre") +
-							$" {keyword} " + StringLoader.GetString("Prompt_ProcessRec2Post");
-						await serviceConnection.ReportProgressAsync(VoiceCommandResponse.CreateResponse(userPrompt));
+		//	if (result != null)  // User Cancel => result = null
+		//		if (result.Confirmed)
+		//		{
+		//			if (Config.isRCon && keyword != null)
+		//			{
+		//				userPrompt.SpokenMessage = StringLoader.GetString("Prompt_ProcessRec1") + keyword;
+		//				userPrompt.DisplayMessage = StringLoader.GetString("Prompt_ProcessRec2Pre") +
+		//					$" {keyword} " + StringLoader.GetString("Prompt_ProcessRec2Post");
+		//				await serviceConnection.ReportProgressAsync(VoiceCommandResponse.CreateResponse(userPrompt));
 
-						await ReRecommend(keyword);
-					}
-					else
-					{
-						userPrompt.SpokenMessage = StringLoader.GetString("Prompt_GoodFeedback1");
-						userPrompt.DisplayMessage = StringLoader.GetString("Prompt_GoodFeedback2");
+		//				await ReRecommend(keyword);
+		//			}
+		//			else
+		//			{
+		//				userPrompt.SpokenMessage = StringLoader.GetString("Prompt_GoodFeedback1");
+		//				userPrompt.DisplayMessage = StringLoader.GetString("Prompt_GoodFeedback2");
 
-						await serviceConnection.ReportSuccessAsync(VoiceCommandResponse.CreateResponse(userPrompt));
-					}
-				}
-				else
-				{
-					userPrompt.SpokenMessage = StringLoader.GetString("Prompt_BadFeedback1");
-					userPrompt.DisplayMessage = StringLoader.GetString("Prompt_BadFeedback2");
+		//				await serviceConnection.ReportSuccessAsync(VoiceCommandResponse.CreateResponse(userPrompt));
+		//			}
+		//		}
+		//		else
+		//		{
+		//			userPrompt.SpokenMessage = StringLoader.GetString("Prompt_BadFeedback1");
+		//			userPrompt.DisplayMessage = StringLoader.GetString("Prompt_BadFeedback2");
 
-					await serviceConnection.ReportFailureAsync(VoiceCommandResponse.CreateResponse(userPrompt));
-				}
-		}
+		//			await serviceConnection.ReportFailureAsync(VoiceCommandResponse.CreateResponse(userPrompt));
+		//		}
+		//}
 
-		private async Task ReRecommend(string keyword)
-		{
-			var dianping = new ParseDianPing();
-			var result = await dianping.GetOne(keyword);
+		//private async Task ReRecommend(string keyword)
+		//{
+		//	var dianping = new ParseDianPing();
+		//	var result = await dianping.GetOne(keyword);
 
-			var userPrompt = new VoiceCommandUserMessage();
-			userPrompt.SpokenMessage = result.name + StringLoader.GetString("Prompt_Recommend1");
-			userPrompt.DisplayMessage = StringLoader.GetString("Prompt_Recommend2") + " " + result.name;
+		//	var userPrompt = new VoiceCommandUserMessage();
+		//	userPrompt.SpokenMessage = result.name + StringLoader.GetString("Prompt_Recommend1");
+		//	userPrompt.DisplayMessage = StringLoader.GetString("Prompt_Recommend2") + " " + result.name;
 
-			var tile = new VoiceCommandContentTile();
-			tile.Title = result.name;
-			tile.TextLine1 = result.address;
-			tile.TextLine3 = StringLoader.GetString("Prompt_Recommend4");
-			tile.AppLaunchArgument = result.link;
-			tile.ContentTileType = VoiceCommandContentTileType.TitleWithText;
+		//	var tile = new VoiceCommandContentTile();
+		//	tile.Title = result.name;
+		//	tile.TextLine1 = result.address;
+		//	tile.TextLine3 = StringLoader.GetString("Prompt_Recommend4");
+		//	tile.AppLaunchArgument = result.link;
+		//	tile.ContentTileType = VoiceCommandContentTileType.TitleWithText;
 
-			await serviceConnection.ReportSuccessAsync(
-				VoiceCommandResponse.CreateResponse(
-					userPrompt, new List<VoiceCommandContentTile> { tile }));
-		}
+		//	await serviceConnection.ReportSuccessAsync(
+		//		VoiceCommandResponse.CreateResponse(
+		//			userPrompt, new List<VoiceCommandContentTile> { tile }));
+		//}
 
 		private async Task ReAddOpts(string ques, string[] feature)
 		{

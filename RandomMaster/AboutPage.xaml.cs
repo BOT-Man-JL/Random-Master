@@ -28,9 +28,9 @@ namespace RandomMaster
         {
             this.InitializeComponent();
             easterEgg.IsOn = Config.isEEon;
-			cortanaFeedback.IsOn = Config.isFBon;
-			cortanaRC.IsOn = Config.isRCon;
-			cortanaRC.IsEnabled = Config.isFBon;
+			//cortanaFeedback.IsOn = Config.isFBon;
+			//cortanaRC.IsOn = Config.isRCon;
+			//cortanaRC.IsEnabled = Config.isFBon;
 
 			if (!Config.isVcdInstalled)
 				InstallVCD.Visibility = Visibility.Visible;
@@ -42,18 +42,18 @@ namespace RandomMaster
             Config.SaveConfig();
 		}
 
-		private void cortanaFeedback_Toggled(object sender, RoutedEventArgs e)
-		{
-			Config.isFBon = cortanaFeedback.IsOn;
-			cortanaRC.IsEnabled = Config.isFBon;
-			Config.SaveConfig();
-		}
+		//private void cortanaFeedback_Toggled(object sender, RoutedEventArgs e)
+		//{
+		//	Config.isFBon = cortanaFeedback.IsOn;
+		//	cortanaRC.IsEnabled = Config.isFBon;
+		//	Config.SaveConfig();
+		//}
 
-		private void cortanaRC_Toggled(object sender, RoutedEventArgs e)
-		{
-			Config.isRCon = cortanaRC.IsOn;
-			Config.SaveConfig();
-		}
+		//private void cortanaRC_Toggled(object sender, RoutedEventArgs e)
+		//{
+		//	Config.isRCon = cortanaRC.IsOn;
+		//	Config.SaveConfig();
+		//}
 
 		private void reTutorial_Click(object sender, RoutedEventArgs e)
 		{
